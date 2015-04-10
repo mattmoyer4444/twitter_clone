@@ -1,0 +1,478 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'bcrypt' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json twitter_clone@1.0.0 No description
+6 warn package.json twitter_clone@1.0.0 No repository field.
+7 warn package.json twitter_clone@1.0.0 No README data
+8 silly cache add args [ 'bcrypt', null ]
+9 verbose cache add spec bcrypt
+10 silly cache add parsed spec { raw: 'bcrypt',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'bcrypt',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 verbose addNamed bcrypt@*
+12 silly addNamed semver.valid null
+13 silly addNamed semver.validRange *
+14 silly addNameRange { name: 'bcrypt', range: '*', hasData: false }
+15 silly mapToRegistry name bcrypt
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+19 verbose addNameRange registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/bcrypt
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 3:21:02 PM
+23 verbose request id 28e46d2f5892dcec
+24 verbose etag "6HE4KMA2RRO6XV5V2QBC3QD2S"
+25 http request GET https://registry.npmjs.org/bcrypt
+26 http 304 https://registry.npmjs.org/bcrypt
+27 silly get cb [ 304,
+27 silly get   { date: 'Wed, 08 Apr 2015 20:21:08 GMT',
+27 silly get     server: 'Apache',
+27 silly get     via: '1.1 varnish',
+27 silly get     'last-modified': 'Wed, 08 Apr 2015 20:21:09 GMT',
+27 silly get     'cache-control': 'max-age=60',
+27 silly get     etag: '"6HE4KMA2RRO6XV5V2QBC3QD2S"',
+27 silly get     age: '0',
+27 silly get     'x-served-by': 'cache-dfw1829-DFW',
+27 silly get     'x-cache': 'HIT',
+27 silly get     'x-cache-hits': '1',
+27 silly get     'x-timer': 'S1428524468.808986,VS0,VE253',
+27 silly get     vary: 'Accept',
+27 silly get     'content-length': '0',
+27 silly get     'keep-alive': 'timeout=10, max=50',
+27 silly get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/bcrypt from cache
+29 verbose get saving bcrypt to C:\Users\Matt\AppData\Roaming\npm-cache\registry.npmjs.org\bcrypt\.cache.json
+30 silly addNameRange number 2 { name: 'bcrypt', range: '*', hasData: true }
+31 silly addNameRange versions [ 'bcrypt',
+31 silly addNameRange   [ '0.1.2',
+31 silly addNameRange     '0.2.0',
+31 silly addNameRange     '0.2.1',
+31 silly addNameRange     '0.1.3',
+31 silly addNameRange     '0.2.2',
+31 silly addNameRange     '0.2.3',
+31 silly addNameRange     '0.2.4',
+31 silly addNameRange     '0.3.0',
+31 silly addNameRange     '0.3.1',
+31 silly addNameRange     '0.3.2',
+31 silly addNameRange     '0.4.0',
+31 silly addNameRange     '0.4.1',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.6.0',
+31 silly addNameRange     '0.7.0',
+31 silly addNameRange     '0.7.1',
+31 silly addNameRange     '0.7.2',
+31 silly addNameRange     '0.7.3',
+31 silly addNameRange     '0.7.4',
+31 silly addNameRange     '0.7.5',
+31 silly addNameRange     '0.7.6',
+31 silly addNameRange     '0.7.7',
+31 silly addNameRange     '0.7.8',
+31 silly addNameRange     '0.8.0',
+31 silly addNameRange     '0.8.1',
+31 silly addNameRange     '0.8.2' ] ]
+32 verbose addNamed bcrypt@0.8.2
+33 silly addNamed semver.valid 0.8.2
+34 silly addNamed semver.validRange 0.8.2
+35 silly cache afterAdd bcrypt@0.8.2
+36 verbose afterAdd C:\Users\Matt\AppData\Roaming\npm-cache\bcrypt\0.8.2\package\package.json not in flight; writing
+37 verbose afterAdd C:\Users\Matt\AppData\Roaming\npm-cache\bcrypt\0.8.2\package\package.json written
+38 silly install resolved [ { name: 'bcrypt',
+38 silly install resolved     description: 'A bcrypt library for NodeJS.',
+38 silly install resolved     keywords:
+38 silly install resolved      [ 'bcrypt',
+38 silly install resolved        'password',
+38 silly install resolved        'auth',
+38 silly install resolved        'authentication',
+38 silly install resolved        'encryption',
+38 silly install resolved        'crypt',
+38 silly install resolved        'crypto' ],
+38 silly install resolved     main: './bcrypt',
+38 silly install resolved     version: '0.8.2',
+38 silly install resolved     author: { name: 'Nick Campbell', url: 'https://github.com/ncb000gt' },
+38 silly install resolved     engines: { node: '>= 0.6.0' },
+38 silly install resolved     repository:
+38 silly install resolved      { type: 'git',
+38 silly install resolved        url: 'https://github.com/ncb000gt/node.bcrypt.js.git' },
+38 silly install resolved     licenses: [ [Object] ],
+38 silly install resolved     bugs: { url: 'https://github.com/ncb000gt/node.bcrypt.js/issues' },
+38 silly install resolved     scripts:
+38 silly install resolved      { test: 'node-gyp configure build && nodeunit test',
+38 silly install resolved        install: 'node-gyp rebuild' },
+38 silly install resolved     dependencies: { bindings: '1.2.0', nan: '1.7.0' },
+38 silly install resolved     devDependencies: { nodeunit: '>=0.6.4' },
+38 silly install resolved     contributors:
+38 silly install resolved      [ [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object] ],
+38 silly install resolved     gypfile: true,
+38 silly install resolved     gitHead: '5f5f0e9fa8c0f18b6489d6a07551999de2eb40e5',
+38 silly install resolved     homepage: 'https://github.com/ncb000gt/node.bcrypt.js',
+38 silly install resolved     _id: 'bcrypt@0.8.2',
+38 silly install resolved     _shasum: '4732f0ddd1e0fb066dcd8ad9472d3d300fd96824',
+38 silly install resolved     _from: 'bcrypt@*',
+38 silly install resolved     _npmVersion: '2.7.3',
+38 silly install resolved     _nodeVersion: '0.10.35',
+38 silly install resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+38 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+38 silly install resolved     dist:
+38 silly install resolved      { shasum: '4732f0ddd1e0fb066dcd8ad9472d3d300fd96824',
+38 silly install resolved        tarball: 'http://registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz' },
+38 silly install resolved     directories: {},
+38 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz',
+38 silly install resolved     readme: 'ERROR: No README data found!' } ]
+39 info install bcrypt@0.8.2 into C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone
+40 info installOne bcrypt@0.8.2
+41 verbose installOne of bcrypt to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone not in flight; installing
+42 verbose lock using C:\Users\Matt\AppData\Roaming\npm-cache\_locks\bcrypt-2b2394141b111beb.lock for C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+43 silly install write writing bcrypt 0.8.2 to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+44 silly cache addNamed cb bcrypt@0.8.2
+45 verbose unbuild node_modules\bcrypt
+46 verbose gentlyRm vacuuming C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+47 verbose tar unpack C:\Users\Matt\AppData\Roaming\npm-cache\bcrypt\0.8.2\package.tgz
+48 verbose tar unpacking to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+49 verbose gentlyRm vacuuming C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+50 silly gunzTarPerm modes [ '777', '666' ]
+51 silly gunzTarPerm extractEntry package.json
+52 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+53 silly gunzTarPerm extractEntry .npmignore
+54 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+57 silly gunzTarPerm extractEntry LICENSE
+58 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+59 silly gunzTarPerm extractEntry bcrypt.js
+60 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 438 ]
+61 silly gunzTarPerm extractEntry binding.gyp
+62 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+63 silly gunzTarPerm extractEntry .travis.yml
+64 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+65 silly gunzTarPerm extractEntry CHANGELOG.md
+66 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+67 silly gunzTarPerm extractEntry examples/async_compare.js
+68 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 438 ]
+69 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+70 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 438 ]
+71 silly gunzTarPerm extractEntry test/async.js
+72 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+73 silly gunzTarPerm extractEntry test/repetitions.js
+74 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 438 ]
+75 silly gunzTarPerm extractEntry test/sync.js
+76 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+77 silly gunzTarPerm extractEntry Makefile
+78 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+79 silly gunzTarPerm extractEntry src/bcrypt.cc
+80 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 438 ]
+81 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+82 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 438 ]
+83 silly gunzTarPerm extractEntry src/blowfish.cc
+84 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 438 ]
+85 silly gunzTarPerm extractEntry src/node_blf.h
+86 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 438 ]
+87 silly gunzTarPerm extractEntry werker.yml
+88 silly gunzTarPerm modified mode [ 'werker.yml', 420, 438 ]
+89 info preinstall bcrypt@0.8.2
+90 silly prepareForInstallMany adding bindings@1.2.0 from bcrypt dependencies
+91 silly prepareForInstallMany adding nan@1.7.0 from bcrypt dependencies
+92 silly cache add args [ 'bindings@1.2.0', null ]
+93 verbose cache add spec bindings@1.2.0
+94 silly cache add args [ 'nan@1.7.0', null ]
+95 verbose cache add spec nan@1.7.0
+96 silly cache add parsed spec { raw: 'bindings@1.2.0',
+96 silly cache add   scope: null,
+96 silly cache add   name: 'bindings',
+96 silly cache add   rawSpec: '1.2.0',
+96 silly cache add   spec: '1.2.0',
+96 silly cache add   type: 'version' }
+97 verbose addNamed bindings@1.2.0
+98 silly addNamed semver.valid 1.2.0
+99 silly addNamed semver.validRange 1.2.0
+100 silly mapToRegistry name bindings
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry uri https://registry.npmjs.org/bindings
+104 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+105 silly cache add parsed spec { raw: 'nan@1.7.0',
+105 silly cache add   scope: null,
+105 silly cache add   name: 'nan',
+105 silly cache add   rawSpec: '1.7.0',
+105 silly cache add   spec: '1.7.0',
+105 silly cache add   type: 'version' }
+106 verbose addNamed nan@1.7.0
+107 silly addNamed semver.valid 1.7.0
+108 silly addNamed semver.validRange 1.7.0
+109 silly mapToRegistry name nan
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry uri https://registry.npmjs.org/nan
+113 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+114 verbose request uri https://registry.npmjs.org/bindings
+115 verbose request no auth needed
+116 info attempt registry request try #1 at 3:21:03 PM
+117 verbose etag "5997G8NY1OJEMZ1HNHL7VBX5J"
+118 http request GET https://registry.npmjs.org/bindings
+119 verbose request uri https://registry.npmjs.org/nan
+120 verbose request no auth needed
+121 info attempt registry request try #1 at 3:21:03 PM
+122 verbose etag "2RVNOBUBIPFCFHXKKPTSTKGB8"
+123 http request GET https://registry.npmjs.org/nan
+124 http 304 https://registry.npmjs.org/bindings
+125 silly get cb [ 304,
+125 silly get   { date: 'Wed, 08 Apr 2015 20:21:09 GMT',
+125 silly get     server: 'Apache',
+125 silly get     via: '1.1 varnish',
+125 silly get     'last-modified': 'Wed, 08 Apr 2015 20:21:09 GMT',
+125 silly get     'cache-control': 'max-age=60',
+125 silly get     etag: '"5997G8NY1OJEMZ1HNHL7VBX5J"',
+125 silly get     age: '23',
+125 silly get     'x-served-by': 'cache-dfw1826-DFW',
+125 silly get     'x-cache': 'HIT',
+125 silly get     'x-cache-hits': '1',
+125 silly get     'x-timer': 'S1428524469.505496,VS0,VE0',
+125 silly get     vary: 'Accept',
+125 silly get     'content-length': '0',
+125 silly get     'keep-alive': 'timeout=10, max=50',
+125 silly get     connection: 'Keep-Alive' } ]
+126 verbose etag https://registry.npmjs.org/bindings from cache
+127 verbose get saving bindings to C:\Users\Matt\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+128 http 304 https://registry.npmjs.org/nan
+129 silly get cb [ 304,
+129 silly get   { date: 'Wed, 08 Apr 2015 20:21:09 GMT',
+129 silly get     server: 'Apache',
+129 silly get     via: '1.1 varnish',
+129 silly get     'last-modified': 'Wed, 08 Apr 2015 20:21:09 GMT',
+129 silly get     'cache-control': 'max-age=60',
+129 silly get     etag: '"2RVNOBUBIPFCFHXKKPTSTKGB8"',
+129 silly get     age: '40',
+129 silly get     'x-served-by': 'cache-dfw1832-DFW',
+129 silly get     'x-cache': 'HIT',
+129 silly get     'x-cache-hits': '2',
+129 silly get     'x-timer': 'S1428524469.516175,VS0,VE0',
+129 silly get     vary: 'Accept',
+129 silly get     'content-length': '0',
+129 silly get     'keep-alive': 'timeout=10, max=50',
+129 silly get     connection: 'Keep-Alive' } ]
+130 verbose etag https://registry.npmjs.org/nan from cache
+131 verbose get saving nan to C:\Users\Matt\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+132 silly cache afterAdd bindings@1.2.0
+133 verbose afterAdd C:\Users\Matt\AppData\Roaming\npm-cache\bindings\1.2.0\package\package.json not in flight; writing
+134 silly cache afterAdd nan@1.7.0
+135 verbose afterAdd C:\Users\Matt\AppData\Roaming\npm-cache\nan\1.7.0\package\package.json not in flight; writing
+136 verbose afterAdd C:\Users\Matt\AppData\Roaming\npm-cache\bindings\1.2.0\package\package.json written
+137 verbose afterAdd C:\Users\Matt\AppData\Roaming\npm-cache\nan\1.7.0\package\package.json written
+138 silly install resolved [ { name: 'bindings',
+138 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+138 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+138 silly install resolved     version: '1.2.0',
+138 silly install resolved     author:
+138 silly install resolved      { name: 'Nathan Rajlich',
+138 silly install resolved        email: 'nathan@tootallnate.net',
+138 silly install resolved        url: 'http://tootallnate.net' },
+138 silly install resolved     repository:
+138 silly install resolved      { type: 'git',
+138 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+138 silly install resolved     main: './bindings.js',
+138 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+138 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+138 silly install resolved     _id: 'bindings@1.2.0',
+138 silly install resolved     dist:
+138 silly install resolved      { shasum: 'c224fc5b349a84043779f97a6271d9d70da7636f',
+138 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.0.tgz' },
+138 silly install resolved     _from: 'bindings@1.2.0',
+138 silly install resolved     _npmVersion: '1.4.3',
+138 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+138 silly install resolved     maintainers: [ [Object], [Object] ],
+138 silly install resolved     directories: {},
+138 silly install resolved     _shasum: 'c224fc5b349a84043779f97a6271d9d70da7636f',
+138 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.0.tgz',
+138 silly install resolved     readme: 'ERROR: No README data found!' },
+138 silly install resolved   { name: 'nan',
+138 silly install resolved     version: '1.7.0',
+138 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+138 silly install resolved     main: 'include_dirs.js',
+138 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+138 silly install resolved     scripts:
+138 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+138 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+138 silly install resolved     contributors:
+138 silly install resolved      [ [Object],
+138 silly install resolved        [Object],
+138 silly install resolved        [Object],
+138 silly install resolved        [Object],
+138 silly install resolved        [Object],
+138 silly install resolved        [Object],
+138 silly install resolved        [Object] ],
+138 silly install resolved     devDependencies:
+138 silly install resolved      { bindings: '~1.2.1',
+138 silly install resolved        'node-gyp': '~1.0.2',
+138 silly install resolved        pangyp: '~2.0.1',
+138 silly install resolved        tap: '~0.5.0',
+138 silly install resolved        xtend: '~4.0.0' },
+138 silly install resolved     license: 'MIT',
+138 silly install resolved     gitHead: '550efb5dde5cb6bf79db87ab48dce850e56e971a',
+138 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+138 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+138 silly install resolved     _id: 'nan@1.7.0',
+138 silly install resolved     _shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+138 silly install resolved     _from: 'nan@1.7.0',
+138 silly install resolved     _npmVersion: '2.5.1',
+138 silly install resolved     _nodeVersion: '0.12.0',
+138 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+138 silly install resolved     maintainers: [ [Object], [Object] ],
+138 silly install resolved     dist:
+138 silly install resolved      { shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+138 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.7.0.tgz' },
+138 silly install resolved     directories: {},
+138 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz',
+138 silly install resolved     readme: 'ERROR: No README data found!' } ]
+139 info install bindings@1.2.0 into C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+140 info install nan@1.7.0 into C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+141 info installOne bindings@1.2.0
+142 verbose installOne of bindings to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt not in flight; installing
+143 info installOne nan@1.7.0
+144 verbose installOne of nan to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt not in flight; installing
+145 verbose lock using C:\Users\Matt\AppData\Roaming\npm-cache\_locks\nan-d21e9d042caeff9c.lock for C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\nan
+146 verbose lock using C:\Users\Matt\AppData\Roaming\npm-cache\_locks\bindings-03a5396c15239db9.lock for C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\bindings
+147 silly install write writing nan 1.7.0 to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\nan
+148 silly cache addNamed cb nan@1.7.0
+149 verbose unbuild node_modules\bcrypt\node_modules\nan
+150 silly install write writing bindings 1.2.0 to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\bindings
+151 silly cache addNamed cb bindings@1.2.0
+152 verbose unbuild node_modules\bcrypt\node_modules\bindings
+153 verbose gentlyRm vacuuming C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\nan
+154 verbose gentlyRm vacuuming C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\bindings
+155 verbose tar unpack C:\Users\Matt\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz
+156 verbose tar unpacking to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\nan
+157 verbose gentlyRm vacuuming C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\nan
+158 verbose tar unpack C:\Users\Matt\AppData\Roaming\npm-cache\bindings\1.2.0\package.tgz
+159 verbose tar unpacking to C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\bindings
+160 verbose gentlyRm vacuuming C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\bindings
+161 silly gunzTarPerm modes [ '777', '666' ]
+162 silly gunzTarPerm modes [ '777', '666' ]
+163 silly gunzTarPerm extractEntry package.json
+164 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+165 silly gunzTarPerm extractEntry package.json
+166 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+167 silly gunzTarPerm extractEntry README.md
+168 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+169 silly gunzTarPerm extractEntry bindings.js
+170 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+171 silly gunzTarPerm extractEntry include_dirs.js
+172 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+173 silly gunzTarPerm extractEntry LICENSE.md
+174 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+175 silly gunzTarPerm extractEntry .dntrc
+176 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+177 silly gunzTarPerm extractEntry appveyor.yml
+178 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+179 silly gunzTarPerm extractEntry nan.h
+180 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+181 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+182 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+183 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+184 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+185 silly gunzTarPerm extractEntry nan_new.h
+186 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+187 silly gunzTarPerm extractEntry nan_string_bytes.h
+188 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+189 silly gunzTarPerm extractEntry CHANGELOG.md
+190 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+191 info preinstall bindings@1.2.0
+192 silly install resolved []
+193 verbose about to build C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\bindings
+194 info build C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\bindings
+195 verbose linkStuff [ false,
+195 verbose linkStuff   false,
+195 verbose linkStuff   false,
+195 verbose linkStuff   'C:\\Users\\Matt\\WebstormProjects\\talentbuddy\\twitter_clone\\node_modules\\bcrypt\\node_modules' ]
+196 info linkStuff bindings@1.2.0
+197 verbose linkBins bindings@1.2.0
+198 verbose linkMans bindings@1.2.0
+199 verbose rebuildBundles bindings@1.2.0
+200 info install bindings@1.2.0
+201 info postinstall bindings@1.2.0
+202 verbose unlock done using C:\Users\Matt\AppData\Roaming\npm-cache\_locks\bindings-03a5396c15239db9.lock for C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\bindings
+203 info preinstall nan@1.7.0
+204 silly install resolved []
+205 verbose about to build C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\nan
+206 info build C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\nan
+207 verbose linkStuff [ false,
+207 verbose linkStuff   false,
+207 verbose linkStuff   false,
+207 verbose linkStuff   'C:\\Users\\Matt\\WebstormProjects\\talentbuddy\\twitter_clone\\node_modules\\bcrypt\\node_modules' ]
+208 info linkStuff nan@1.7.0
+209 verbose linkBins nan@1.7.0
+210 verbose linkMans nan@1.7.0
+211 verbose rebuildBundles nan@1.7.0
+212 info install nan@1.7.0
+213 info postinstall nan@1.7.0
+214 verbose unlock done using C:\Users\Matt\AppData\Roaming\npm-cache\_locks\nan-d21e9d042caeff9c.lock for C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt\node_modules\nan
+215 verbose about to build C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+216 info build C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+217 verbose linkStuff [ false,
+217 verbose linkStuff   false,
+217 verbose linkStuff   false,
+217 verbose linkStuff   'C:\\Users\\Matt\\WebstormProjects\\talentbuddy\\twitter_clone\\node_modules' ]
+218 info linkStuff bcrypt@0.8.2
+219 verbose linkBins bcrypt@0.8.2
+220 verbose linkMans bcrypt@0.8.2
+221 verbose rebuildBundles bcrypt@0.8.2
+222 verbose rebuildBundles [ 'bindings', 'nan' ]
+223 info install bcrypt@0.8.2
+224 verbose unsafe-perm in lifecycle true
+225 info bcrypt@0.8.2 Failed to exec install script
+226 verbose unlock done using C:\Users\Matt\AppData\Roaming\npm-cache\_locks\bcrypt-2b2394141b111beb.lock for C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+227 verbose stack Error: bcrypt@0.8.2 install: `node-gyp rebuild`
+227 verbose stack Exit status 1
+227 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+227 verbose stack     at EventEmitter.emit (events.js:110:17)
+227 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+227 verbose stack     at ChildProcess.emit (events.js:110:17)
+227 verbose stack     at maybeClose (child_process.js:1008:16)
+227 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+228 verbose pkgid bcrypt@0.8.2
+229 verbose cwd C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone
+230 error Windows_NT 6.1.7601
+231 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "bcrypt"
+232 error node v0.12.0
+233 error npm  v2.5.1
+234 error code ELIFECYCLE
+235 error bcrypt@0.8.2 install: `node-gyp rebuild`
+235 error Exit status 1
+236 error Failed at the bcrypt@0.8.2 install script 'node-gyp rebuild'.
+236 error This is most likely a problem with the bcrypt package,
+236 error not with npm itself.
+236 error Tell the author that this fails on your system:
+236 error     node-gyp rebuild
+236 error You can get their info via:
+236 error     npm owner ls bcrypt
+236 error There is likely additional logging output above.
+237 verbose exit [ 1, true ]
+238 verbose unbuild node_modules\bcrypt
+239 info preuninstall bcrypt@0.8.2
+240 info uninstall bcrypt@0.8.2
+241 verbose unbuild rmStuff bcrypt@0.8.2 from C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules
+242 info postuninstall bcrypt@0.8.2
+243 verbose gentlyRm vacuuming C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+244 silly gentlyRm purging C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules\bcrypt
+245 silly gentlyRm quitting because other entries in C:\Users\Matt\WebstormProjects\talentbuddy\twitter_clone\node_modules
