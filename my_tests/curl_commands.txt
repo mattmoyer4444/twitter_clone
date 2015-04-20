@@ -1,0 +1,25 @@
+// user post
+
+
+// tweet post
+curl -H "Content-Type: application/json" -X POST -d "{ \"tweet\": { \"userId\": \"peter\", \"text\": \"From zero to one\"}}" http://127.0.0.1:3000/api/tweets
+
+// tweet delete
+curl -H "Content-Type: application/json" -X DELETE -u username:password http://127.0.0.1:3000/api/tweets/1
+
+// user auth
+curl -H "Content-Type: application/json" -X POST -d "{ \"username\": \"talentbuddy\", \"password\": \"welovecode\" }" http://127.0.0.1:3000/api/auth/login
+
+// unauthorized tweets
+curl -H "Content-Type: application/json" -X POST -d "{ \"tweet\": { \"userId\": \"peter\", \"text\": \"From zero to one\" } }" http://127.0.0.1:3000/api/tweets
+
+
+// tweet get
+curl -H "Content-Type: application/json" -X GET  http://127.0.0.1:3000/api/tweets/2
+
+// logout post
+curl -H "Content-Type: application/json" -X POST -d "{ \"username\": \"talentbuddy\", \"password\": \"welovecode\" }" http://127.0.0.1:3000/api/auth/logout
+
+// password PUT
+curl -H "Content-Type: application/json" -X PUT -d " {\"password\": \"test\"}" http://127.0.0.1:3000/api/users/peter
+
